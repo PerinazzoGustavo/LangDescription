@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/holo_red_dark"
+    tools:context=".TmbActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+
+        <TextView
+            android:id="@+id/tmb_title"
+            style="@style/TextViewForm"
+            android:text="@string/label_tmb"
+            android:textSize="20sp"/>
+        <RadioGroup
+            android:id="@+id/tmb_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/man_button"
+                android:text="@string/man_string"
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/woman_button"
+                android:text="@string/woman_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/weight_tmb"
+            style="@style/EditViewForm"
+            android:hint="@string/enter_with_your_weight"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/height_tmb"
+            style="@style/EditViewForm"
+            android:hint="@string/enter_with_your_height"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/years_old"
+            style="@style/EditViewForm"
+            android:hint="@string/years_string"
+            android:minHeight="48dp" />
+        <Spinner
+            android:id="@+id/spinner_lifestyle"
+            style="@style/spinner_tmb_lifestyle"
+            android:entries="@array/tmb_lifestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/tmb_button"
+            style="@style/generic_button"
+            android:text="@string/calc"
+            android:textColor="#1565C0" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
